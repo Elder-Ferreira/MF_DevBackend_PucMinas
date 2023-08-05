@@ -1,30 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+﻿using mf_dev_backend;
 using mf_dev_backend.Models;
-using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace mf_dev_backend.Controllers
+namespace mf_dev_backend.Controllers 
 {
-
     public class VeiculosController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public VeiculosController(ApplicationDbContext context)
+        public VeiculosController(AppDbContext context)
         {
             _context = context;
         }
-
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Veiculos.ToListAsync());
+            var dados = await _context.Veiculos.ToListAsync();
+
+            return View(dados);
         }
     }
 }
-
-       
