@@ -10,7 +10,7 @@ namespace mf_dev_backend.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o nome!")]
-        public int Nome { get; set; }
+        public string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o placa!")]
         public string Placa { get; set; }

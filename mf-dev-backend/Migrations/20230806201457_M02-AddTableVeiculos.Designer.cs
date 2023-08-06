@@ -11,8 +11,8 @@ using mf_dev_backend.Models;
 namespace mf_dev_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230803173537_M01-AddTableVeiculo")]
-    partial class M01AddTableVeiculo
+    [Migration("20230806201457_M02-AddTableVeiculos")]
+    partial class M02AddTableVeiculos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -37,8 +37,9 @@ namespace mf_dev_backend.Migrations
                     b.Property<int>("AnoModelo")
                         .HasColumnType("int");
 
-                    b.Property<int>("Nome")
-                        .HasColumnType("int");
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Placa")
                         .IsRequired()

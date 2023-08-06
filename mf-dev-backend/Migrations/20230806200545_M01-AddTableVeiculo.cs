@@ -14,7 +14,7 @@ namespace mf_dev_backend.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<int>(type: "int", nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Placa = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AnoFabricacao = table.Column<int>(type: "int", nullable: false),
                     AnoModelo = table.Column<int>(type: "int", nullable: false)
