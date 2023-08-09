@@ -1,0 +1,54 @@
+﻿@model IEnumerable<mf_dev_backend.Models.Consumo>
+
+@{
+    ViewData["Title"] = "Relatorio";
+}
+
+<h1>Relatório do veículo: @ViewBag.Veiculo.Nome</h1>
+
+<h4>Valor Total: @ViewBag.Total</h4>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>                   
+        </tr>
+}
+    </tbody>
+</table>
