@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\mf-dev-backend\\mf-dev-backend\\mf-dev-backend.csproj": {}
+    "C:\\Workspace\\mf-dev-backend\\MF_DevBackend_PucMinas\\mf-dev-backend\\mf-dev-backend.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\mf-dev-backend\\mf-dev-backend\\mf-dev-backend.csproj": {
+    "C:\\Workspace\\mf-dev-backend\\MF_DevBackend_PucMinas\\mf-dev-backend\\mf-dev-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\mf-dev-backend\\mf-dev-backend\\mf-dev-backend.csproj",
+        "projectUniqueName": "C:\\Workspace\\mf-dev-backend\\MF_DevBackend_PucMinas\\mf-dev-backend\\mf-dev-backend.csproj",
         "projectName": "mf-dev-backend",
-        "projectPath": "C:\\Workspace\\mf-dev-backend\\mf-dev-backend\\mf-dev-backend.csproj",
+        "projectPath": "C:\\Workspace\\mf-dev-backend\\MF_DevBackend_PucMinas\\mf-dev-backend\\mf-dev-backend.csproj",
         "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\mf-dev-backend\\mf-dev-backend\\obj\\",
+        "outputPath": "C:\\Workspace\\mf-dev-backend\\MF_DevBackend_PucMinas\\mf-dev-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.21, )"

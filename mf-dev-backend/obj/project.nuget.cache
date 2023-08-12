@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ggQ837H06yEMPeTUvnbnrlXZpPmXnfcivRrpiEdl2Zxg9mffaCQKJo6D47r5chG0KUHEPKz7vNBbpJMhjDHc2w==",
+  "dgSpecHash": "NQDjCOeq5ewP+vtDcNjELmlwZ9qU0ZvpKxDxXjUrHYXT7pfXkF4LNG6H9vSL+z2akc42sNz23eYY25sf/U+kAA==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\mf-dev-backend\\mf-dev-backend\\mf-dev-backend.csproj",
+  "projectFilePath": "C:\\Workspace\\mf-dev-backend\\MF_DevBackend_PucMinas\\mf-dev-backend\\mf-dev-backend.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Windows 10\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Windows 10\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Windows 10\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Windows 10\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
