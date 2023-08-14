@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using mf_dev_backend.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using System.Security.Principal;
 
 namespace mf_dev_backend.Controllers
 {
@@ -66,7 +67,7 @@ namespace mf_dev_backend.Controllers
 
                 await HttpContext.SignInAsync(prncipal, props);
 
-                Redirect("/");
+                return Redirect("/");
             }
             else
             {
@@ -74,6 +75,13 @@ namespace mf_dev_backend.Controllers
             }
 
             return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return RedirectToAction("Login", "Usuarios");   
         }
 
         // GET: Usuarios/Details/5
