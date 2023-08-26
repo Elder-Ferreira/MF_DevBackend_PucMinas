@@ -1,8 +1,8 @@
 # MF_DevBackend_PucMinas
 
-Sistema de gerenciamento de veículos desenvolvido em dotnet.
+Sistema de gerenciamento de veículos desenvolvido em dotnet. Plataforma permite administrar e gerenciar usuários, veículos e seus consumos. 
 
-Lista de veículos cadastrados
+Lista de veículos cadastrados (usuário autenticado)
 ![image](https://github.com/Elder-Ferreira/MF_DevBackend_PucMinas/assets/103782980/b7d63a09-4506-439e-94d4-d8ff63fdde1e)
 
 Cadastrando novo veículo
